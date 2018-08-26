@@ -13,6 +13,10 @@ get '/input' do
   erb :input
 end
 
+post '/conform' do
+  @expert = params[:expert]
+  erb :conform
+end
 
 
 get '/result' do
