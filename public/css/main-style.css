@@ -1,0 +1,39 @@
+
+section{
+    padding: 150px 20px;
+}
+
+.container{
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    padding: 100px 50px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+p {
+    text-align: left;
+    font-size: 23px;
+}
+.center-btn{
+    margin-top: 50px;
+
+}
+
+form{
+    padding: 30px 20px;
+    height:auto;
+}
+
+.select-wrapper{
+    padding: 30px 0px;
+}
+label{
+    font-size: 25px;
+
+}
