@@ -37,3 +37,26 @@ label{
     font-size: 25px;
 
 }
+
+
+@media screen and (min-width: 480px) {
+    section {
+        padding: 30px 20px;
+    }
+
+    .container {
+        box-sizing: border-box;
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+        padding: 50px 20px;
+        border-radius: 3px;
+        text-align: center;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+}

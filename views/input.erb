@@ -3,13 +3,13 @@
 <form action="/conform" method="post">
 
 
-<h1>取得した単位を入力！</h1>
+<h2>取得した単位を入力！</h2>
 
 
 <div class="select-wrapper row">
   <label class="col s7">専門科目</label>
   <select class="browser-default col s2" name="expert">
-    <option value="" disabled selected>取得した単位数</option>
+    <option value="" disabled selected>単位数</option>
     <% (0..30).each do |num| %>
     <option value="<%= num %>"><%= num %></option>
     <% end %>
@@ -19,34 +19,35 @@
 
 
 
-
-
-<!--  <div class="select-wrapper row">-->
-<!--    <label class="col s7">選択必須</label>-->
-<!--    <select class="browser-default col s2" name="expert-select">-->
-<!--      <option value="" disabled selected>取得した単位数</option>-->
-      <%# (0..30).each do |num| %>
-<!--        <option value="<%#= num %>"><%#= num %></option>-->
-      <%# end %>
-<!--    </select>-->
-<!--    <div class="col s3"></div>-->
-<!--  </div>-->
+  <div class="select-wrapper row">
+    <label class="col s7">選択必須</label>
+    <select class="browser-default col s2" name="expertSelect">
+      <option value="" disabled selected>単位数</option>
+      <% (0..30).each do |num| %>
+        <option value="<%= num %>"><%= num %></option>
+      <% end %>
+    </select>
+    <div class="col s3"></div>
+  </div>
 
 
 
-<!--  <div class="select-wrapper row">-->
-<!--    <label class="col s7">学科選択</label>-->
-<!--    <select class="browser-default col s2" name="unit-expert-select">-->
-<!--      <option value="" disabled selected>取得した単位数</option>-->
-      <%# (0..30).each do |num| %>
-<!--        <option value="<%#= num %>"><%#= num %></option>-->
-      <%# end %>
-<!--    </select>-->
-<!--    <div class="col s3"></div>-->
-<!--  </div>-->
+  <div class="select-wrapper row">
+    <label class="col s7">学科選択</label>
+    <select class="browser-default col s2" name="unitExpertSelect">
+      <option value="" disabled selected>単位数</option>
+      <% (0..30).each do |num| %>
+        <option value="<%= num %>"><%= num %></option>
+      <% end %>
+    </select>
+    <div class="col s3"></div>
+  </div>
+
+
 
 
 
   <input class="waves-effect waves-light btn-large center-btn" type="submit" value="診断">
 
 </form>
+

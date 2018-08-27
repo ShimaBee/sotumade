@@ -15,6 +15,8 @@ end
 
 post '/conform' do
   @expert = params[:expert]
+  @expertSelect = params[:expertSelect]
+  @unitExpertSelect = params[:unitExpertSelect]
   erb :conform
 end
 
