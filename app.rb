@@ -13,11 +13,11 @@ get '/input' do
   erb :input
 end
 
-post '/conform' do
+post '/result' do
   @expert = params[:expert]
   @expertSelect = params[:expertSelect]
   @unitExpertSelect = params[:unitExpertSelect]
-  erb :conform
+  erb :result
 end
 
 
