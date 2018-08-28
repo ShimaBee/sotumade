@@ -17,7 +17,7 @@ post '/result' do
   @expert = params[:expert]
   @expertSelect = params[:expertSelect]
   @unitExpertSelect = params[:unitExpertSelect]
-  erb :result
+  erb :graduation
 end
 
 
