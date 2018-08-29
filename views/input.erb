@@ -7,40 +7,40 @@
 
 
 <div class="select-wrapper row">
-  <label class="col s7">専門科目</label>
-  <select class="browser-default col s2" name="expert">
+  <label class="col s6">専門科目</label>
+  <select class="browser-default col s6" name="expert">
     <option value="" disabled selected>単位数</option>
     <% (0..30).each do |num| %>
     <option value="<%= num %>"><%= num %></option>
     <% end %>
   </select>
-  <div class="col s3"></div>
+
 </div>
 
 
 
   <div class="select-wrapper row">
-    <label class="col s7">選択必須</label>
-    <select class="browser-default col s2" name="expertSelect">
+    <label class="col s6">選択必須</label>
+    <select class="browser-default col s6" name="expertSelect">
       <option value="" disabled selected>単位数</option>
       <% (0..30).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
       <% end %>
     </select>
-    <div class="col s3"></div>
+
   </div>
 
 
 
   <div class="select-wrapper row">
-    <label class="col s7">学科選択</label>
-    <select class="browser-default col s2" name="unitExpertSelect">
+    <label class="col s6">学科選択</label>
+    <select class="browser-default col s6" name="unitExpertSelect">
       <option value="" disabled selected>単位数</option>
       <% (0..30).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
       <% end %>
     </select>
-    <div class="col s3"></div>
+
   </div>
 
 

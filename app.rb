@@ -18,10 +18,13 @@ post '/result' do
   @expertSelect = params[:expertSelect].to_i
   @unitExpertSelect = params[:unitExpertSelect].to_i
 
-  if @expert >= 10 || @expertSelect >= 10 || @unitExpertSelect >= 10
+  if @expert >= 10 && @expertSelect >= 10 && @unitExpertSelect >= 10
   erb :graduation
 
   else
+    @remaindUnit = 128 - @expert + @expertSelect + @unitExpertSelect
+
+
     erb :remaind
     end
 end
