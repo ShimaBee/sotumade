@@ -1,27 +1,27 @@
 
 section{
-    padding: 150px 20px;
+    padding: 50px 20px;
 }
 
 .container{
     box-sizing: border-box;
     box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
-    padding: 100px 50px;
+    padding: 30px 10px;
     border-radius: 3px;
     text-align: center;
 }
 
 h1{
     font-weight: bold;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 p {
     text-align: left;
-    font-size: 23px;
+    font-size: 18px;
 }
 .center-btn{
-    margin-top: 50px;
+    margin-top: 30px;
 
 }
 
@@ -31,32 +31,10 @@ form{
 }
 
 .select-wrapper{
-    padding: 30px 0px;
+    padding: 20px 0px;
 }
 label{
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
-
-@media screen and (min-width: 480px) {
-    section {
-        padding: 30px 20px;
-    }
-
-    .container {
-        box-sizing: border-box;
-        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-        padding: 50px 20px;
-        border-radius: 3px;
-        text-align: center;
-    }
-}
-
-
-
-
-@media screen and (min-width: 768px) {
-
-
-}
