@@ -7,8 +7,8 @@
 
 
   <div class="select-wrapper row">
-    <label class="col s6">共通教育</label>
-    <select class="browser-default col s6" name="common">
+    <label class="col s5">共通教育</label>
+    <select class="browser-default col s7" name="common">
       <option value="" disabled selected>単位数</option>
       <% (0..50).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
@@ -18,8 +18,8 @@
   </div>
 
 <div class="select-wrapper row">
-  <label class="col s6">必修科目</label>
-  <select class="browser-default col s6" name="compulsory">
+  <label class="col s5">必修科目</label>
+  <select class="browser-default col s7" name="compulsory">
     <option value="" disabled selected>単位数</option>
     <% (0..50).each do |num| %>
     <option value="<%= num %>"><%= num %></option>
@@ -31,8 +31,8 @@
 
 
   <div class="select-wrapper row">
-    <label class="col s6">選択科目</label>
-    <select class="browser-default col s6" name="expertSelect">
+    <label class="col s5">選択科目</label>
+    <select class="browser-default col s7" name="expertSelect">
       <option value="" disabled selected>単位数</option>
       <% (0..40).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
@@ -44,8 +44,8 @@
 
 
   <div class="select-wrapper row">
-    <label class="col s6">自由科目</label>
-    <select class="browser-default col s6" name="freedom">
+    <label class="col s5">自由科目</label>
+    <select class="browser-default col s7" name="freedom">
       <option value="" disabled selected>単位数</option>
       <% (0..40).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
