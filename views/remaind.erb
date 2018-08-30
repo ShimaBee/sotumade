@@ -4,25 +4,33 @@
 <span class="remaindUnit"><%= @remaindUnit %></span>
 <p class="arrange">単位</p>
 
+
+
 <div class="row">
-  <p class="col s5 arrange">専門</p>
+  <p class="col s5 arrange">共通教育</p>
+  <p class="col s4 arrange"><%= @common %></p>
+  <p class="col s3">/40</p>
+</div>
+
+<div class="row">
+  <p class="col s5 arrange">必修</p>
+  <p class="col s4 arrange"><%= @compulsory %></p>
+  <p class="col s3">/34</p>
+</div>
+
+
+<div class="row">
+  <p class="col s5 arrange">選択</p>
   <p class="col s4 arrange"><%= @expertSelect %></p>
-  <p class="col s3">/12</p>
+  <p class="col s3">/26</p>
 </div>
 
 
 <div class="row">
-  <p class="col s5 arrange">専門</p>
-  <p class="col s4 arrange"><%= @expert %></p>
-  <p class="col s3">/12</p>
+  <p class="col s5 arrange">自由</p>
+  <p class="col s4 arrange"><%= @freedom %></p>
+  <p class="col s3">/24</p>
 </div>
 
-
-
-<div class="row">
-  <p class="col s5 arrange">専門</p>
-  <p class="col s4 arrange"><%= @unitExpertSelect %></p>
-  <p class="col s3">/12</p>
-</div>
 
 <a href="/" class="waves-effect waves-light btn-large center-btn">top</a>

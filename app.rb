@@ -14,16 +14,16 @@ get '/input' do
 end
 
 post '/result' do
-  @expert = params[:expert].to_i
+  @common = params[:common].to_i
+  @compulsory = params[:compulsory].to_i
   @expertSelect = params[:expertSelect].to_i
-  @unitExpertSelect = params[:unitExpertSelect].to_i
+  @freedom = params[:freedom].to_i
 
-  if @expert >= 10 && @expertSelect >= 10 && @unitExpertSelect >= 10
+  if @common >= 10  && @compulsory >= 10 && @expertSelect >= 10 && @freedom >= 10
   erb :graduation
 
   else
-    @remaindUnit = 128 - @expert + @expertSelect + @unitExpertSelect
-
+    @remaindUnit = 124 - (@common + @compulsory + @expertSelect + @freedom)
 
     erb :remaind
     end

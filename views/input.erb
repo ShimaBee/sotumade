@@ -6,11 +6,22 @@
 <h2>取得した単位を入力！</h2>
 
 
+  <div class="select-wrapper row">
+    <label class="col s6">共通教育</label>
+    <select class="browser-default col s6" name="common">
+      <option value="" disabled selected>単位数</option>
+      <% (0..50).each do |num| %>
+        <option value="<%= num %>"><%= num %></option>
+      <% end %>
+    </select>
+
+  </div>
+
 <div class="select-wrapper row">
-  <label class="col s6">専門科目</label>
-  <select class="browser-default col s6" name="expert">
+  <label class="col s6">必修科目</label>
+  <select class="browser-default col s6" name="compulsory">
     <option value="" disabled selected>単位数</option>
-    <% (0..30).each do |num| %>
+    <% (0..50).each do |num| %>
     <option value="<%= num %>"><%= num %></option>
     <% end %>
   </select>
@@ -20,10 +31,10 @@
 
 
   <div class="select-wrapper row">
-    <label class="col s6">選択必須</label>
+    <label class="col s6">選択科目</label>
     <select class="browser-default col s6" name="expertSelect">
       <option value="" disabled selected>単位数</option>
-      <% (0..30).each do |num| %>
+      <% (0..40).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
       <% end %>
     </select>
@@ -33,10 +44,10 @@
 
 
   <div class="select-wrapper row">
-    <label class="col s6">学科選択</label>
-    <select class="browser-default col s6" name="unitExpertSelect">
+    <label class="col s6">自由科目</label>
+    <select class="browser-default col s6" name="freedom">
       <option value="" disabled selected>単位数</option>
-      <% (0..30).each do |num| %>
+      <% (0..40).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
       <% end %>
     </select>
@@ -47,7 +58,7 @@
 
 
 
-  <input class="waves-effect waves-light btn-large center-btn" type="submit" value="診断">
+  <input class="waves-effect waves-light btn-large center-btn" type="submit" value="check">
 
 </form>
 
