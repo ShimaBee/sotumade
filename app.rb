@@ -19,7 +19,7 @@ post '/result' do
   @expertSelect = params[:expertSelect].to_i
   @freedom = params[:freedom].to_i
 
-  if @common >= 10  && @compulsory >= 10 && @expertSelect >= 10 && @freedom >= 10
+  if @common >= 40  && @compulsory >= 34 && @expertSelect >= 26 && @freedom >= 24
   erb :graduation
 
   else
