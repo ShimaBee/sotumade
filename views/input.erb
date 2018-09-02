@@ -8,7 +8,7 @@
 
   <div class="select-wrapper row">
     <label class="col s5">健康運動</label>
-    <select class="browser-default col s7" name="exarcise">
+    <select class="browser-default col s7" name="exercise">
       <option value="" disabled selected>単位数</option>
       <% (0..50).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
@@ -114,7 +114,7 @@
 
   <div class="select-wrapper row">
     <label class="col s5">学科特色</label>
-    <select class="browser-default col s7" name="DFeature">
+    <select class="browser-default col s7" name="dep_feature">
       <option value="" disabled selected>単位数</option>
       <% (0..50).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
@@ -126,7 +126,7 @@
 
   <div class="select-wrapper row">
     <label class="col s5">学科基礎</label>
-    <select class="browser-default col s7" name="DBasicCompulsory">
+    <select class="browser-default col s7" name="dep_basic_compulsory">
       <option value="" disabled selected>単位数</option>
       <% (0..50).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
@@ -139,7 +139,7 @@
 
   <div class="select-wrapper row">
     <label class="col s5">学科基礎（選択）</label>
-    <select class="browser-default col s7" name="DBasicSelect">
+    <select class="browser-default col s7" name="dep_basic_select">
       <option value="" disabled selected>単位数</option>
       <% (0..50).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
@@ -152,7 +152,7 @@
 
   <div class="select-wrapper row">
     <label class="col s5">学科選択</label>
-    <select class="browser-default col s7" name="DSelect">
+    <select class="browser-default col s7" name="dep_select">
       <option value="" disabled selected>単位数</option>
       <% (0..40).each do |num| %>
         <option value="<%= num %>"><%= num %></option>
@@ -177,6 +177,18 @@
 
 
 
+<!--  exercis-->
+<!--  humanity-->
+<!--  society-->
+<!--  synthesis-->
+<!--  feature-->
+<!--  information-->
+<!--  language1-->
+<!--  language2-->
+<!--  DFeature-->
+<!--  DBasicCompulsory-->
+<!--  DBasicSelect-->
+<!--  DSelect-->
 
   <input class="waves-effect waves-light btn-large center-btn" type="submit" value="check">
 
