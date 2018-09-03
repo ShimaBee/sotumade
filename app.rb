@@ -14,7 +14,7 @@ get '/input' do
 end
 
 post '/result' do
-  @exercis = params[:exercise].to_i
+  @exercise = params[:exercise].to_i
   @humanity = params[:humanity].to_i
   @society = params[:society].to_i
   @synthesis = params[:synthesis].to_i
