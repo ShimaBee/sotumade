@@ -1,0 +1,67 @@
+
+
+<h2>専門教育</h2>
+
+
+<div class="select-wrapper row">
+  <label class="col s5">学科特色</label>
+  <select class="browser-default col s7" name="dep_feature">
+    <option value="" disabled selected>単位数</option>
+    <% (0..30).each do |num| %>
+      <option value="<%= num %>"><%= num %></option>
+    <% end %>
+  </select>
+
+</div>
+
+
+<div class="select-wrapper row">
+  <label class="col s5">学科基礎</label>
+  <select class="browser-default col s7" name="dep_basic_compulsory">
+    <option value="" disabled selected>単位数</option>
+    <% (0..40).each do |num| %>
+      <option value="<%= num %>"><%= num %></option>
+    <% end %>
+  </select>
+
+</div>
+
+
+
+<div class="select-wrapper row">
+  <label class="col s5">学科基礎（選択）</label>
+  <select class="browser-default col s7" name="dep_basic_select">
+    <option value="" disabled selected>単位数</option>
+    <% (0..20).each do |num| %>
+      <option value="<%= num %>"><%= num %></option>
+    <% end %>
+  </select>
+
+</div>
+
+
+
+<div class="select-wrapper row">
+  <label class="col s5">学科選択</label>
+  <select class="browser-default col s7" name="dep_select">
+    <option value="" disabled selected>単位数</option>
+    <% (0..30).each do |num| %>
+      <option value="<%= num %>"><%= num %></option>
+    <% end %>
+  </select>
+
+</div>
+
+
+
+<div class="select-wrapper row">
+  <label class="col s5">自由科目</label>
+  <select class="browser-default col s7" name="freedom">
+    <option value="" disabled selected>単位数</option>
+    <% (0..50).each do |num| %>
+      <option value="<%= num %>"><%= num %></option>
+    <% end %>
+  </select>
+
+</div>
+
